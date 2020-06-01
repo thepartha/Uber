@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,168 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Uber" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UBER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YO3-Qj-qi1">
+                                <rect key="frame" x="173" y="60" width="68" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="rider@gmail.com" borderStyle="roundedRect" placeholder="you@gmail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9T3-52-10T">
+                                <rect key="frame" x="20" y="101" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="12345678" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K9o-an-A1E">
+                                <rect key="frame" x="20" y="153" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xZr-ll-stO">
+                                <rect key="frame" x="182.5" y="217" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rider" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qf-FI-zi3">
+                                <rect key="frame" x="121" y="222" width="40" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Driver" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJT-Nu-Ikm">
+                                <rect key="frame" x="255" y="222" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Vq-Uw-mZs">
+                                <rect key="frame" x="183" y="277" width="48" height="30"/>
+                                <state key="normal" title="Signup"/>
+                                <connections>
+                                    <action selector="topButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gWS-xw-DhQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8tI-u3-u3n">
+                                <rect key="frame" x="197.5" y="315" width="19" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTj-Ei-YD9">
+                                <rect key="frame" x="188" y="346" width="38" height="30"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="bottomButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NqK-Aw-hz7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="8tI-u3-u3n" firstAttribute="top" secondItem="4Vq-Uw-mZs" secondAttribute="bottom" constant="8" id="17a-km-uoq"/>
+                            <constraint firstItem="8tI-u3-u3n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4TU-OU-pa4"/>
+                            <constraint firstItem="K9o-an-A1E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4tT-Hp-qQo"/>
+                            <constraint firstItem="xZr-ll-stO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B1G-cq-xln"/>
+                            <constraint firstItem="4Vq-Uw-mZs" firstAttribute="top" secondItem="xZr-ll-stO" secondAttribute="bottom" constant="29" id="BDZ-YH-wOL"/>
+                            <constraint firstItem="4Vq-Uw-mZs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BXa-tD-ZQK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K9o-an-A1E" secondAttribute="trailing" constant="20" id="C0V-Xs-Fn0"/>
+                            <constraint firstItem="xZr-ll-stO" firstAttribute="leading" secondItem="4qf-FI-zi3" secondAttribute="trailing" constant="21.5" id="I3v-w1-Xk1"/>
+                            <constraint firstItem="YO3-Qj-qi1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Jin-Mw-I2K"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9T3-52-10T" secondAttribute="trailing" constant="20" id="YNf-JA-MKx"/>
+                            <constraint firstItem="dJT-Nu-Ikm" firstAttribute="leading" secondItem="xZr-ll-stO" secondAttribute="trailing" constant="23.5" id="bHS-6c-2ua"/>
+                            <constraint firstItem="bTj-Ei-YD9" firstAttribute="top" secondItem="8tI-u3-u3n" secondAttribute="bottom" constant="10" id="cA9-2L-NMp"/>
+                            <constraint firstItem="xZr-ll-stO" firstAttribute="top" secondItem="K9o-an-A1E" secondAttribute="bottom" constant="30" id="f1U-Xc-vHy"/>
+                            <constraint firstItem="9T3-52-10T" firstAttribute="top" secondItem="YO3-Qj-qi1" secondAttribute="bottom" constant="8" id="hN2-dZ-6kK"/>
+                            <constraint firstItem="K9o-an-A1E" firstAttribute="top" secondItem="9T3-52-10T" secondAttribute="bottom" constant="18" id="iZZ-9W-UyC"/>
+                            <constraint firstItem="YO3-Qj-qi1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ld4-64-lgX"/>
+                            <constraint firstItem="bTj-Ei-YD9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nDB-ey-iEZ"/>
+                            <constraint firstItem="dJT-Nu-Ikm" firstAttribute="centerY" secondItem="xZr-ll-stO" secondAttribute="centerY" id="tLn-iu-c9b"/>
+                            <constraint firstItem="4qf-FI-zi3" firstAttribute="centerY" secondItem="xZr-ll-stO" secondAttribute="centerY" id="vhr-Ao-bC6"/>
+                            <constraint firstItem="9T3-52-10T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wL9-Rk-Jpg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="bottomButton" destination="bTj-Ei-YD9" id="RJl-cb-1b8"/>
+                        <outlet property="driverLabel" destination="dJT-Nu-Ikm" id="p4q-zv-6Hc"/>
+                        <outlet property="emailTextField" destination="9T3-52-10T" id="xtB-YG-vdr"/>
+                        <outlet property="passwordTextField" destination="K9o-an-A1E" id="NMv-P9-8DM"/>
+                        <outlet property="riderDriverSwitch" destination="xZr-ll-stO" id="Sbc-s2-O15"/>
+                        <outlet property="riderLabel" destination="4qf-FI-zi3" id="4VN-NN-QTx"/>
+                        <outlet property="topButton" destination="4Vq-Uw-mZs" id="1nS-F6-vbH"/>
+                        <segue destination="YBZ-Ue-DP4" kind="presentation" identifier="riderSegue" modalPresentationStyle="fullScreen" id="nhe-Ia-RAS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-64" y="129"/>
+        </scene>
+        <!--Rider View Controller-->
+        <scene sceneID="kWk-Gm-Ueg">
+            <objects>
+                <viewController id="7j8-bS-qUS" customClass="RiderViewController" customModule="Uber" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="45W-JZ-JDV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="sh7-9A-Obf">
+                                <rect key="frame" x="20" y="108" width="374" height="344"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="sh7-9A-Obf" secondAttribute="height" multiplier="187:172" id="rfU-iG-9DA"/>
+                                </constraints>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7k-8z-1cq">
+                                <rect key="frame" x="165" y="468" width="84" height="30"/>
+                                <state key="normal" title="Call an Uber"/>
+                                <connections>
+                                    <action selector="callUberTapped:" destination="7j8-bS-qUS" eventType="touchUpInside" id="i69-si-SyI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sh7-9A-Obf" firstAttribute="top" secondItem="Zqy-H9-oYe" secondAttribute="top" constant="20" id="9vT-97-nfg"/>
+                            <constraint firstItem="b7k-8z-1cq" firstAttribute="top" secondItem="sh7-9A-Obf" secondAttribute="bottom" constant="16" id="SKB-dL-C4J"/>
+                            <constraint firstItem="Zqy-H9-oYe" firstAttribute="trailing" secondItem="sh7-9A-Obf" secondAttribute="trailing" constant="20" id="knz-nR-HaJ"/>
+                            <constraint firstItem="b7k-8z-1cq" firstAttribute="centerX" secondItem="45W-JZ-JDV" secondAttribute="centerX" id="t4e-Wb-dPY"/>
+                            <constraint firstItem="sh7-9A-Obf" firstAttribute="leading" secondItem="Zqy-H9-oYe" secondAttribute="leading" constant="20" id="xdB-JJ-pTT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Zqy-H9-oYe"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9sj-UQ-Nt1">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="rT7-hl-A4f">
+                            <connections>
+                                <action selector="logoutTapped:" destination="7j8-bS-qUS" id="1Gg-MX-X13"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="callUberButton" destination="b7k-8z-1cq" id="NvU-rj-Ncd"/>
+                        <outlet property="map" destination="sh7-9A-Obf" id="Obf-ss-nam"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LzE-Ih-Flr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1581.1594202898552" y="148.66071428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DCp-yi-29e">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YBZ-Ue-DP4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KjU-8n-ZEd">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7j8-bS-qUS" kind="relationship" relationship="rootViewController" id="qPF-wN-tUl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D9e-YI-Kyp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="671.01449275362324" y="148.66071428571428"/>
         </scene>
     </scenes>
 </document>
