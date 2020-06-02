@@ -16,13 +16,30 @@ class AcceptRequestViewController: UIViewController {
     var requestLocation = CLLocationCoordinate2D()
     var requestEmail = ""
     var ref: DatabaseReference!
+    var driverLocation = CLLocationCoordinate2D()
     
     @IBAction func acceptTapped(_ sender: Any) {
         //Update the rider request
         ref.queryOrdered(byChild: "email").queryEqual(toValue: requestEmail).observe(.childAdded) { (snapshot) in
+            snapshot.ref.updateChildValues(["driverLat": self.driverLocation.latitude, "driverLon":self.driverLocation.longitude])
+            self.ref.removeAllObservers()
+        }
+        
+        let requestCLLocation = CLLocation(latitude: requestLocation.latitude, longitude: requestLocation.longitude)
+        CLGeocoder().reverseGeocodeLocation(requestCLLocation) { (placemarks, error) in
+            if let placemarks = placemarks {
+                if placemarks.count > 0 {
+                    let mkPlacemark = MKPlacemark(placemark: placemarks[0])
+                    let mapItem = MKMapItem(placemark: mkPlacemark)
+                    
+                    mapItem.name = self.requestEmail
+                    let options = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
+                    mapItem.openInMaps(launchOptions: options)
+                    
+                }
+            }
             
         }
-        //Give directions
     }
         
     override func viewDidLoad() {

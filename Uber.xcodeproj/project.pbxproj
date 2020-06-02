@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B2193AB5248539EE00D0E6E4 /* DriverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2193AB4248539EE00D0E6E4 /* DriverTableViewController.swift */; };
 		B2193AB724853FBB00D0E6E4 /* AcceptRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2193AB624853FBB00D0E6E4 /* AcceptRequestViewController.swift */; };
+		B2931D522485DCEB006EBB87 /* DriverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2931D512485DCEB006EBB87 /* DriverTableViewController.swift */; };
 		B2FC3AE7248496BC00433152 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FC3AE6248496BC00433152 /* AppDelegate.swift */; };
 		B2FC3AE9248496BC00433152 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FC3AE8248496BC00433152 /* SceneDelegate.swift */; };
 		B2FC3AEB248496BC00433152 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FC3AEA248496BC00433152 /* ViewController.swift */; };
@@ -23,8 +23,8 @@
 /* Begin PBXFileReference section */
 		360DA77129E6ACDC55B385E5 /* Pods_Uber.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Uber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C89C7932D9CE4995CC5C303 /* Pods-Uber.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uber.debug.xcconfig"; path = "Target Support Files/Pods-Uber/Pods-Uber.debug.xcconfig"; sourceTree = "<group>"; };
-		B2193AB4248539EE00D0E6E4 /* DriverTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DriverTableViewController.swift; path = "/Users/partha/Google Drive/Personal/IOS/Uber/Uber/DriverTableViewController.swift"; sourceTree = "<absolute>"; };
 		B2193AB624853FBB00D0E6E4 /* AcceptRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptRequestViewController.swift; sourceTree = "<group>"; };
+		B2931D512485DCEB006EBB87 /* DriverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		B2FC3AE3248496BC00433152 /* Uber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Uber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2FC3AE6248496BC00433152 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2FC3AE8248496BC00433152 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 				B2FC3AF1248496C100433152 /* LaunchScreen.storyboard */,
 				B2FC3AF4248496C100433152 /* Info.plist */,
 				B2FC3AFA2484972D00433152 /* GoogleService-Info.plist */,
-				B2193AB4248539EE00D0E6E4 /* DriverTableViewController.swift */,
+				B2931D512485DCEB006EBB87 /* DriverTableViewController.swift */,
 				B2FC3AFC2484AA1D00433152 /* RiderViewController.swift */,
 			);
 			path = Uber;
@@ -221,7 +221,7 @@
 			files = (
 				B2FC3AEB248496BC00433152 /* ViewController.swift in Sources */,
 				B2FC3AFD2484AA1D00433152 /* RiderViewController.swift in Sources */,
-				B2193AB5248539EE00D0E6E4 /* DriverTableViewController.swift in Sources */,
+				B2931D522485DCEB006EBB87 /* DriverTableViewController.swift in Sources */,
 				B2FC3AE7248496BC00433152 /* AppDelegate.swift in Sources */,
 				B2193AB724853FBB00D0E6E4 /* AcceptRequestViewController.swift in Sources */,
 				B2FC3AE9248496BC00433152 /* SceneDelegate.swift in Sources */,
@@ -372,6 +372,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5LM4V5K574;
 				INFOPLIST_FILE = Uber/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -391,6 +392,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5LM4V5K574;
 				INFOPLIST_FILE = Uber/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
